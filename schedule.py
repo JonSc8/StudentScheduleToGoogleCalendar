@@ -18,7 +18,8 @@ class Schedule:
                 else:
                     tmp.append(td[0])
                     tmp.append(td[1])
-            courses_info.append(tmp)
+            if(len(tmp) == 11):
+                courses_info.append(tmp)
         
         course_object_list = []
         for course in courses_info:
